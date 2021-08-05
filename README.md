@@ -1,4 +1,10 @@
-### cnn_skin-classfication_makemodel_practice
-Using pretrained model in google colab
+### CNN_Skin-Classification_Make_Model
+Using pretrained model in google colab  
 
-It is practiced code so do not use in your code.(it cannot be helpful)
+### Used Tech and framework
+- Python
+  - pytorch(torch)
+  - torchvision
+  - PIL
+  - numpy
+  - matplolib
