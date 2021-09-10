@@ -16,7 +16,7 @@ verb = True
 import copy
 import cv2
 import dlib
-# import imageio
+import imageio
 import numpy as np
 import os
 import sys
@@ -28,7 +28,7 @@ from scipy import misc
 import matplotlib.pyplot as plt
 # %matplotlib inline
 
-ye_cascade = cv2.CascadeClassifier(Eye_Cascade_Path) # Initialize the Eye cascade model
+eye_cascade = cv2.CascadeClassifier(Eye_Cascade_Path) # Initialize the Eye cascade model
 
 #####################################################
 # These are the default parameters for landmark model
@@ -63,7 +63,7 @@ OVERLAY_POINTS = [
 
 # Amount of blur to use during colour correction, as a fraction of the
 # pupillary distance.
-#COLOUR_CORRECT_BLUR_FRAC = 0.6
+COLOUR_CORRECT_BLUR_FRAC = 0.6
 
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(PREDICTOR_PATH) # Initialize the landmark model
